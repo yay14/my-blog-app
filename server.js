@@ -15,7 +15,7 @@ connectDB();
 
 app.use("/posts",postsRoute);
 
-if(process.env.NODE_ENV === production)
+if(process.env.NODE_ENV === 'production')
 {
   app.use(expres.static('client/build')); 
 }
