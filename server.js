@@ -17,7 +17,7 @@ app.use("/posts",postsRoute);
 
 if(process.env.NODE_ENV === 'production')
 {
-  app.use(expres.static('client/build')); 
+  app.use(express.static('client/build')); 
 }
 
 app.listen(port,() => console.log(`App is live on: ${port}`));
